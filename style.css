@@ -15,21 +15,145 @@ body {
 }
 .wrapper {
     display: flex;
-    width: 800px;
+    width: 1000px;
     margin-right: 50px auto;
     background: #fff;
     padding: 10px;
 }
-.wrapper .portfolio-left {
+.wrapper .left {
     width: 35%;
     background: #26252d;
-
 }
-.wrapper .portfolio-left .portfolio-image {
+.wrapper .left .portfolio-image {
     width: 100%;
 }
-.wrapper .portfolio-left .portfolio-image img {
+.wrapper .left .portfolio-image img {
     width: 100%;
     display: block;
     
 }
+.wrapper .portfolio-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+.wrapper .left .portfolio-info {
+    color: #84838b;
+}
+.wrapper .left .portfolio-bottom {
+    padding: 20px 30px;
+}
+.wrapper .portfolio-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e40776;
+}
+.wrapper .portfolio-item:last-child {
+    border-bottom: 0;
+}
+/* .wrapper .left .portfolio-name{
+
+} */
+.wrapper .portfolio-name .name {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+.wrapper .left .portfolio-name .role {
+    color: #84838b;
+}
+.wrapper .left .portfolio-contact .portfolio-info:last-child {
+    margin-top: 10px;
+}
+.wrapper .left .portfolio-contact .portfolio-subtitle {
+    color: #fff;
+    margin-bottom:2px;
+}
+.wrapper .left .portfolio-skills .skills-set{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.wrapper .left .portfolio-skills .skills-set .skills-bar p {
+    width: 125px;
+    height: 20px;
+    background: #fff;
+    position: relative;
+}
+.wrapper .left .portfolio-skills .skills-set .skills-bar p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #8b0347;
+    width: 100%;
+    height: 100%;
+}
+.wrapper .right {
+    width: 65%;
+    padding: 20px 40px;
+}
+.wrapper .right .portfolio-name .name {
+    color: #26252d;
+    font-size: 32px;
+}
+.wrapper .right .portfolio-name .role {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #e40776;
+}
+.wrapper .right .portfolio-item .portfolio-title {
+    color: #26252d;
+}
+.wrapper .right .portfolio-data{
+    display: flex;
+}
+.wrapper .right .portfolio-data .year {
+    padding-right: 35px;
+    position:relative ;
+    width: 115px;
+}
+.wrapper .right .portfolio-data .content {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100%-115px);
+}
+.wrapper .right .portfolio-data .year::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #e40776;
+    border-radius: 50%;
+}
+.wrapper .right .portfolio-data .year::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #8b0347;
+}
+.wrapper .right .portfolio-data:last-child .year::after {
+    display: none;
+}
+.wrapper .right .portfolio-interest .portfolio-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.wrapper .right .portfolio-interest .interest .interest-icon {
+    font-size: 38px;
+    color: #8b0347;
+    margin-bottom: 10px;
+}
+
