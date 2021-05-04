@@ -75,7 +75,7 @@ body {
 }
 .wrapper .left .portfolio-skills .skills-set{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
     margin-bottom: 10px;
 }
@@ -157,3 +157,42 @@ body {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width :800px)  {
+    .wrapper{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .wrapper .left, .wrapper .right{
+        width: 100%;
+    }
+    .wrapper .right .portfolio-name{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .wrapper .right {
+        padding: 20px 30px;
+    }
+    .wrapper .right .portfolio-data{
+        flex-direction: column;
+    }
+    .wrapper .right .portfolio-data .year{
+        padding: 0;
+        margin-bottom:5px;
+        width: 100%;
+        color: #e40776;
+    }
+    .wrapper .right .portfolio-data .year::before,
+    .wrapper .right .portfolio-data .year::after {
+        display: none;
+    }
+    .wrapper .right .portfolio-data .year .content{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper .right .interest .interest-icon {
+        font-size: 24px;
+    }
+}
